@@ -79,14 +79,31 @@ package fme.internship;
 
 /**
  * 
- * @author <full name>
- * @email <email address>
+ * @author <Tocaciu Ioana>
+ * @email <tocaciu_ioana@yahoo.com>
  * 
  */
 public class Test3 {
 
     public static void main(String[] args) {
-        System.out.println("FME Internship - Test3");
+        Shape[] shapes = new Shape[4];
+
+        shapes[0] = new Square();
+        shapes[1] = new Circle(2);
+        shapes[2] = new Rectangle();
+        shapes[3] = new Rectangle(4, 5);
+
+        for (int i = 0; i < 4; i++) {
+            System.out.println(shapes[i].toString());
+            System.out.println("The perimeter is " + shapes[i].getPerimeter());
+            System.out.println("The area is " + shapes[i].getArea());
+        }
     }
 
-}
+
+
+
+
+
+
+
